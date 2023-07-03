@@ -32,6 +32,7 @@
     #333
     #ddd
     #888
+    #6f6f6f (lightest gery allowed on #fdf2e9)
 
 --- 05 SHADOWS
 0.075
@@ -118,7 +119,7 @@ body {
 .heading-secondary {
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 3.2rem;
+  margin-bottom: 9.6rem;
 }
 
 .heading-tertiary {
