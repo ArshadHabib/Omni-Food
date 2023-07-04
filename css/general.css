@@ -26,6 +26,7 @@
 - Tints:#fdf2e9
         #fae5d3
 - Shades: #cf711f
+          #eb984e
 - Accents:
 - Greys:
     #555
@@ -35,6 +36,7 @@
     #6f6f6f (lightest gery allowed on #fdf2e9)
 
 --- 05 SHADOWS
+- box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 0.075
 
 --- 06 BORDER-RADIUS
