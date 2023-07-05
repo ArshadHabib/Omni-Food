@@ -25,8 +25,9 @@
 - Primary: #e67e22
 - Tints:#fdf2e9
         #fae5d3
+        #eb984e
 - Shades: #cf711f
-          #eb984e
+          #45260a
 - Accents:
 - Greys:
     #555
@@ -34,6 +35,7 @@
     #ddd
     #888
     #6f6f6f (lightest gery allowed on #fdf2e9)
+    #aaa
 
 --- 05 SHADOWS
 - box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
@@ -151,6 +153,8 @@ body {
   letter-spacing: 0.75px;
 }
 
+/* included simple btn because button element does not have link and visited states */
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
@@ -164,6 +168,11 @@ body {
   /* putt transition on original state */
   /* properties to animate ie all, time */
   transition: all 0.3s;
+
+  /* for button element only*/
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -191,6 +200,18 @@ body {
 
   /* Trick to add border inside */
   box-shadow: inset 0 0 0 3px #fff;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
 }
 
 .link:link,
@@ -228,6 +249,17 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+
+/* global settings for focus style */
+*:focus {
+  outline: none;
+
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+
+  /* using box shadow instead of above */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 
 /* Helper/settings classes for applying margin right */

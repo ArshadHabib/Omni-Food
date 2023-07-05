@@ -475,19 +475,18 @@
   background-color: #e67e22;
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
   border-radius: 11px;
-  height: 50rem;
 
   background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
   overflow: hidden;
 }
 
 .cta-text-box {
-  color: #2e1907;
+  color: #45260a;
   padding: 4.8rem 6.4rem 6.4rem 6.4rem;
 }
 
 .cta .heading-secondary {
-  color: #2e1907;
+  color: #45260a;
   margin-bottom: 3.2rem;
 }
 
@@ -507,6 +506,7 @@
   /* cover the whole image inside the parent */
   background-size: cover;
 
+  /* put the image center on view port if image dimesntion are greater than parent dimensions */
   background-position: center;
 }
 
@@ -515,4 +515,36 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 3.2rem;
   row-gap: 2.4rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+
+  /* inherit the font family from body */
+  font-family: inherit;
+
+  color: inherit;
+
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
