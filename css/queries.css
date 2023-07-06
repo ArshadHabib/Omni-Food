@@ -127,7 +127,7 @@
     display: block;
 
     /* to move focus state on top of all */
-    z-index: 999;
+    z-index: 9999;
   }
 
   .main-nav {
