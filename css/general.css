@@ -67,6 +67,11 @@ html {
 
   /* elements that overflow viewport horizontally should be hidden */
   overflow-x: hidden;
+
+  /* scrolling smoothly to sections on clicking links */
+  /* this will not work on safari engines  and Microsoft Edge*/
+  /* we will use JavaScript for that */
+  /* scroll-behavior: smooth; */
 }
 
 body {
